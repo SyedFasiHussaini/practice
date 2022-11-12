@@ -7,7 +7,7 @@ body {
 }
 *:hover {
   -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 section {
   float: left;
@@ -55,3 +55,12 @@ h1 span {
     height: 140%;
  }
 
+.btn {
+  background: #120E43;
+  border: none;
+  border-radius: 12px;
+}
+
+.card {
+  box-shadow: 1px 1px 15px #000;
+}

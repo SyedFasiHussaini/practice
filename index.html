@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Air lines</title>
+    <link rel="stylesheet" href="./searchFlight.css">
+    <title>The Internet Airlines</title>
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-  <script>
-    $(function() {
-        $('#header').load("./header.html")
-    })
-  </script>
+    <script>
+        $(function () {
+            $('#header').load("./header.html")
+        })
+    </script>
 
 </head>
 
@@ -28,7 +27,70 @@
             <h1 class="heading">Welcome to The Internet Airline.......!!!!!!</h1>
         </div>
         <div class="flight-search-section">
+            <div class="search-container">
+                <div>
+                    <h2 class="title">Search Flights</h2>
+                </div>
+                <div class="origin">
+                    <span>Select Origin:</span>
+                    <select name="origin" id="origin">
+                        <option value="Chicago">Chicago</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New York">New York</option>
+                        <option value="California">California</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Massechusets">Massechusets</option>
+                        <option value="Ohio">Ohio</option>
+                    </select>
+                </div>
 
+                <div class="destination">
+                    <span>Select Destination:</span>
+                    <select name="origin" id="origin">
+                        <option value="Arizona">Arizona</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New York">New York</option>
+                        <option value="California">California</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Massechusets">Massechusets</option>
+                        <option value="Ohio">Ohio</option>
+                    </select>
+                </div>
+                
+                <div class="dates">
+                    <label for="start">Departure:</label>
+                    <input type="date" id="start" name="trip-start" value="2022-11-11" min="2018-01-01"
+                        max="2023-12-31" class="depart-date">
+                </div>
+                <div class="dates">
+                    <label for="return">Return:</label>
+                    <input type="date" id="return" name="trip-start" value="2022-11-11" min="2018-01-01"
+                        max="2023-12-31" class="return-date">
+                </div>
+                <div class="btn">
+                    <a href="#">
+                        <button class="search">Search</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
