@@ -86,8 +86,59 @@
           <label>
             <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
           </label>
-          <input type="submit" value="Continue to checkout" class="btn">
+          <a href="./greatDeals.html" target="_blank" class="btn btn-success mx-5 my-5" id="submit"
+                onclick="submitData()">Proceed Futher &nbsp;&nbsp; &#8594;</a>
+            <a href="index.html" target="_blank" class="btn btn-danger mx-5 my-5">Cancel &nbsp;&nbsp; &#8592;</a>
+          <!-- <input type="submit" value="Continue to checkout" class="btn"> -->
         </form>
       </div>
     </div>
   </body>
+
+  <script> 
+    function submitData() {
+        var fname = $('#fname').val();
+        var email = $('#email').val();
+        var address = $('#adr').val();
+        var city = $('#city').val();
+        var state = $('#state').val();
+        var zip = $('#zip').val();
+        var cname = $('#cname').val();
+        var ccnum = $('#ccnum').val();
+        var expmonth = $('#expmonth').val();
+        var expyear  = $('#expyear').val();
+        var cvv  = $('#cvv').val();
+
+        jsonObject={
+            Fullname : "",
+            Email    : "",
+            Address  :"",
+            City     : "",
+            State    : "",
+            Zip      : "",
+            Cardname : "",
+        CreditCardNo : "",
+            Expmonth : "",
+            Expyear  : "",
+            Cvv  : "",
+
+        }
+
+            jsonObject.Fullname=fname;
+            jsonObject.Email=email;
+            jsonObject. Address=address;
+            jsonObject.City=city;
+            jsonObject.State=state;
+            jsonObject.Zip=zip;
+            jsonObject.Cardname=cname;
+            jsonObject.CreditCardNo=ccnum;
+            jsonObject.Expmonth=expmonth;
+            jsonObject.Expyear=expyear;
+            jsonObject.Cvv=cvv;
+        
+
+        var str=JSON.stringify(jsonObject);
+        document.write(str);
+    }
+  </script>
+</html>
