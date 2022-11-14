@@ -74,7 +74,22 @@
                         <option value="Ohio">Ohio</option>
                     </select>
                 </div>
-                
+                <div class="radio-btn">
+                <span>
+                    <label for="">Trips:</label>&nbsp;&nbsp;
+                    <input type="radio" name="trip" class="check-box" id="trip"
+                    required>&nbsp;<span>One-way</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="trip" class="check-box" id="trip">&nbsp;<span>Round-trip &nbsp;
+                        (40%off)</span></div>
+                        <div class="air-class">
+                            <label for="">Select Class: &nbsp;&nbsp;</label>
+                            <select id="classsection" name="class_preference" required>
+                                <option value="First-class">First class</option>
+                                <option value="Business-class">Business</option>
+                                <option value="Economy-class" selected>Economy</option>
+                                <option value="Economy-class">Premium Economy</option>
+                            </select>
+                        </div>
                 <div class="dates">
                     <label for="start">Departure:</label>
                     <input type="date" id="start" name="trip-start" value="2022-11-11" min="2018-01-01"
@@ -86,7 +101,7 @@
                         max="2023-12-31" class="return-date">
                 </div>
                 <div class="btn">
-                    <a href="#">
+                    <a href="./departure.html">
                         <button class="search">Search</button>
                     </a>
                 </div>
